@@ -1,6 +1,6 @@
 {
 	"version":"Sample 1.0.0",
-	"model":"model.moc",
+	"model":"motions/touch_7.mtn",
 	"textures":[
 		"model.1024/texture_00.png"
 	],
