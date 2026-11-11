@@ -1,4 +1,22 @@
-/*by Karcyril*/
+/*by Zekalryn*/
+
+// 监听 APlayer 的 ended 事件
+ap.on('ended', function () {
+    console.log("歌曲播放完毕，准备自动切歌...");
+    
+    // 手动触发下一首
+    // list.index 是当前歌曲索引，list.audios 是歌曲列表
+    var nextIndex = ap.list.index + 1;
+    
+    // 如果已经是最后一首，切回第一首
+    if (nextIndex >= ap.list.audios.length) {
+        nextIndex = 0;
+    }
+    
+    // 强制切换并播放
+    ap.list.switch(nextIndex);
+    ap.play();
+});
 
 
 var ap = new APlayer({
