@@ -15,7 +15,6 @@ function download(jsonp) {
     $('#jsonp').remove();
     $('body').append($('<script id="jsonp"></script>').prop('src', `https://api.mymemory.translated.net/get?q=${$('.text-submit').val()}`));
 
-
     /**并清空html */
     var tBody = $('.weather-info tbody');
     tBody.html('');
