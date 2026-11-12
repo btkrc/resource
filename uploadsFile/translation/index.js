@@ -1,4 +1,4 @@
-/*by Karcyril*/
+/*by Zekalryn*/
 
 
 jQuery(function () {
